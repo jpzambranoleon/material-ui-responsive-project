@@ -1,10 +1,11 @@
-import { Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
+import Navbar from "./components/Navbar";
 
+const useStyles = makeStyles((theme) => ({}));
 
-export default function App() {
-  return (
-    <div className="App">
-      <Button variant="contained" color="primary">Material UI</Button>
-    </div>
-  );
-}
+const App = () => {
+    const classes = useStyles();
+    return (<div><Navbar /></div>);
+};
+
+export default App;

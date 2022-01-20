@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({}));
 
 const Leftbar = () => {
     const classes = useStyles();
-    return <div></div>;
+    return (<div></div>);
 };
 
 export default Leftbar;

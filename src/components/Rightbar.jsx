@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({}));
 
 const Rightbar = () => {
     const classes = useStyles();
-    return <div></div>;
+    return (<div></div>);
 };
 
 export default Rightbar;
