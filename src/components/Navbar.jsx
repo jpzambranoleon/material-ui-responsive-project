@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: theme.shape.borderRadius,
         width: "50%",
     },
+    input: {
+        color: "white",
+        marginLeft: theme.spacing(1),
+    },
 }));
 
 const Navbar = () => {
@@ -43,7 +47,7 @@ const Navbar = () => {
                 </Typography>
                 <div className={classes.search}>
                     <Search />
-                    <InputBase placeholder="Search..." />
+                    <InputBase placeholder="Search..." className={classes.input}/>
                 </div>
                 icons
             </Toolbar>
