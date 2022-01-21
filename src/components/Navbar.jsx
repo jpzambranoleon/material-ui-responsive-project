@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: alpha(theme.palette.common.white, 0.25),
         },
         borderRadius: theme.shape.borderRadius,
+        width: "50%",
     },
 }));
 
