@@ -5,11 +5,11 @@ const useStyles = makeStyles((theme) => ({}));
 
 const App = () => {
     const classes = useStyles();
-    return (
-<div>
-<Navbar />
-</div>
-);
+    return ( 
+        <div>
+            <Navbar />
+        </div>
+    );
 };
 
 export default App;
