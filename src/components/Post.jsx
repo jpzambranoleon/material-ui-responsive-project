@@ -1,7 +1,9 @@
 import { Card, CardActionArea, CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-
+    media: {
+        height: 250,
+    },
 }));
 
 const Post = () => {
