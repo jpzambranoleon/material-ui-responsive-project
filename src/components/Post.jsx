@@ -32,6 +32,7 @@ const Post = () => {
                 <Button>Share</Button>
                 <Button>Learn More</Button>
                 Fare more
+                Even more
             </CardActions>
         </Card>
     );
