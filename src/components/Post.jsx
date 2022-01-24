@@ -20,7 +20,7 @@ const Post = () => {
                     title="My Post"
                 />
                 <CardContent>
-                    <Typography variant="h5">
+                    <Typography gutterBottom variant="h5">
                         My First Post
                     </Typography>
                     <Typography variant="body">
