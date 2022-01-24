@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     media: {
@@ -28,6 +28,10 @@ const Post = () => {
                     </Typography>
                 </CardContent>
             </CardActionArea>
+            <CardActions>
+                <Button>Share</Button>
+                <Button>Learn More</Button>
+            </CardActions>
         </Card>
     );
 };
