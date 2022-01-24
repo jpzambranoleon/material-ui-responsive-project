@@ -29,8 +29,8 @@ const Post = () => {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button>Share</Button>
-                <Button>Learn More</Button>
+                <Button size="small" color="primary">Share</Button>
+                <Button size="small" color="primary">Learn More</Button>
                 Fare more
                 Even more
             </CardActions>
