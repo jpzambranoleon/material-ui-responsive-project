@@ -23,7 +23,11 @@ const Post = () => {
                     <Typography gutterBottom variant="h5">
                         My First Post
                     </Typography>
-                    <Typography variant="body">
+                    <Typography variant="body2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                        consectetur earum est repudiandae aliquam neque molestiae,
+                        paraesentium placeat unde illo? Recusandae sapiente qui eligendi
+                        repellat, accusantium nobis obcaecati culpa magni.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
                         consectetur earum est repudiandae aliquam neque molestiae,
                         paraesentium placeat unde illo? Recusandae sapiente qui eligendi
