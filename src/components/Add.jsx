@@ -1,4 +1,4 @@
-import { Container, Fab, makeStyles, Modal, TextField, Tooltip } from "@material-ui/core";
+import { Container, Fab, makeStyles, MenuItem, Modal, TextField, Tooltip } from "@material-ui/core";
 import { Add as AddIcon } from "@material-ui/icons";
 import { useState } from "react";
 
@@ -46,11 +46,18 @@ const Add = () => {
                                 id="outline-multiline-static" 
                                 multiline
                                 rows={4}
-                                defaultValue="Default Value"
+                                defaultValue="Tell you story..."
                                 variant="outlined"
                                 label="Description"
                                 size="small" 
                                 style={{width:"100%"}} />
+                        </div>
+                        <div className={classes.item}>
+                            <TextField select label="Visibility">
+                                <MenuItem value="Public">Public</MenuItem>
+                                <MenuItem value="Public">Private</MenuItem>
+                                <MenuItem value="Public">Unlisted</MenuItem>
+                            </TextField>
                         </div>
                     </form>
                 </Container>
