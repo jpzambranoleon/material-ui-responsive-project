@@ -42,7 +42,15 @@ const Add = () => {
                             <TextField id="standard-basic" label="Title" size="small" style={{width:"100%"}} />
                         </div>
                         <div className={classes.item}>
-                            <TextField id="standard-basic" label="Description" size="small" style={{width:"100%"}} />
+                            <TextField 
+                                id="outline-multiline-static" 
+                                multiline
+                                rows={4}
+                                defaultValue="Default Value"
+                                variant="outlined"
+                                label="Description"
+                                size="small" 
+                                style={{width:"100%"}} />
                         </div>
                     </form>
                 </Container>
