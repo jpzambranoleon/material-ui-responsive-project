@@ -61,8 +61,8 @@ const Add = () => {
                         <div className={classes.item}>
                             <TextField select label="Visibility" value="Public">
                                 <MenuItem value="Public">Public</MenuItem>
-                                <MenuItem value="Public">Private</MenuItem>
-                                <MenuItem value="Public">Unlisted</MenuItem>
+                                <MenuItem value="Private">Private</MenuItem>
+                                <MenuItem value="Unlisted">Unlisted</MenuItem>
                             </TextField>
                         </div>
                         <div className={classes.item}>
