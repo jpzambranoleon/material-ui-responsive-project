@@ -1,6 +1,7 @@
-import { Button, Container, Fab, FormControlLabel, FormLabel, makeStyles, MenuItem, Modal, Radio, RadioGroup, TextField, Tooltip } from "@material-ui/core";
+import { Button, Container, Fab, FormControlLabel, FormLabel, makeStyles, MenuItem, Modal, Radio, RadioGroup, Snackbar, TextField, Tooltip } from "@material-ui/core";
 import { Add as AddIcon } from "@material-ui/icons";
 import { useState } from "react";
+import MuiAlert from "@material-ui/lab";
 
 const useStyles = makeStyles((theme) => ({
     fab: {
@@ -30,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(3),
     }
 }));
+
+function Alert(props) {
+    return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 const Add = () => {
     const classes = useStyles();
@@ -83,6 +88,11 @@ const Add = () => {
                     </form>
                 </Container>
             </Modal>
+            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                <Alert>
+
+                </Alert>
+            </Snackbar>
         </>
     );
 };
