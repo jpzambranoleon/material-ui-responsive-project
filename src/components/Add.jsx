@@ -1,7 +1,7 @@
 import { Button, Container, Fab, FormControlLabel, FormLabel, makeStyles, MenuItem, Modal, Radio, RadioGroup, Snackbar, TextField, Tooltip } from "@material-ui/core";
 import { Add as AddIcon } from "@material-ui/icons";
 import { useState } from "react";
-import MuiAlert from "@material-ui/lab";
+import MuiAlert from "@material-ui/lab/Alert";
 
 const useStyles = makeStyles((theme) => ({
     fab: {
@@ -88,7 +88,14 @@ const Add = () => {
                             </RadioGroup>
                         </div>
                         <div className={classes.item}>
-                            <Button variant="outlined" color="primary" style={{ marginRight: 20 }}>Create</Button>
+                            <Button 
+                                variant="outlined" 
+                                color="primary" 
+                                style={{ marginRight: 20 }}
+                                onClick={() => setOpenAlert(true)}
+                            >
+                                Create
+                            </Button>
                             <Button variant="outlined" color="secondary" onClick={() => setOpen(false)}>
                                 Cancel
                             </Button>
@@ -96,9 +103,9 @@ const Add = () => {
                     </form>
                 </Container>
             </Modal>
-            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-                <Alert>
-
+            <Snackbar open={openAlert} autoHideDuration={4000} onClose={handleClose}>
+                <Alert onClose={handleClose} severity="success">
+                    This is a success message!
                 </Alert>
             </Snackbar>
         </>
