@@ -1,4 +1,4 @@
-import { Container, Fab, FormControlLabel, FormLabel, makeStyles, MenuItem, Modal, Radio, RadioGroup, TextField, Tooltip } from "@material-ui/core";
+import { Button, Container, Fab, FormControlLabel, FormLabel, makeStyles, MenuItem, Modal, Radio, RadioGroup, TextField, Tooltip } from "@material-ui/core";
 import { Add as AddIcon } from "@material-ui/icons";
 import { useState } from "react";
 
@@ -67,6 +67,10 @@ const Add = () => {
                                 <FormControlLabel value="Nobody" control={<Radio size="small"/>} label="Nobody" />
                                 <FormControlLabel value="Custom" control={<Radio size="small"/>} label="Custom (Premium)" />
                             </RadioGroup>
+                        </div>
+                        <div className={classes.item}>
+                            <Button variant="outlined" color="primary" style={{ marginRight: 20 }}>Create</Button>
+                            <Button variant="outlined" color="secondary">Cancel</Button>
                         </div>
                     </form>
                 </Container>
