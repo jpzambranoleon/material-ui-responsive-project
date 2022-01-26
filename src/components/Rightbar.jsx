@@ -25,13 +25,13 @@ const Rightbar = () => {
         <Container className={classes.container}>
             <Typography className={classes.title} gutterBottom>Online Friends</Typography>
             <AvatarGroup max={6} style={{ marginBottom: 20 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-                <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-                <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
-                <Avatar alt="Trevor Henderson" src="/static/images/avatar/5.jpg" />
-                <Avatar alt="Trevor Henderson" src="/static/images/avatar/6.jpg" />
-                <Avatar alt="Trevor Henderson" src="/static/images/avatar/7.jpg" />
+                <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" />
+                <Avatar alt="Travis Howard" src="https://mui.com/static/images/avatar/2.jpg" />
+                <Avatar alt="Cindy Baker" src="https://mui.com/static/images/avatar/3.jpg" />
+                <Avatar alt="Agnes Walker" src="https://mui.com/static/images/avatar/4.jpg" />
+                <Avatar alt="Trevor Henderson" src="https://mui.com/static/images/avatar/5.jpg" />
+                <Avatar alt="Trevor Henderson" src="https://mui.com/static/images/avatar/6.jpg" />
+                <Avatar alt="Trevor Henderson" src="https://mui.com/static/images/avatar/7.jpg" />
             </AvatarGroup>
             <Typography className={classes.title} gutterBottom>Gallery</Typography>
             <ImageList rowHeight={100} style={{ marginBottom: 20 }} cols={2}>

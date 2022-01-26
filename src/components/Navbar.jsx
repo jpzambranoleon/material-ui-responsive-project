@@ -84,7 +84,7 @@ const Navbar = () => {
                     <Badge badgeContent={2} color="secondary" className={classes.badge}>
                         <Notifications />
                     </Badge>
-                    <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/8647814/pexels-photo-86478"/>
+                    <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/7.jpg"/>
                 </div>
             </Toolbar>
         </AppBar>
