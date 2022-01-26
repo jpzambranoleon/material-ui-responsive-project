@@ -61,11 +61,11 @@ const Add = () => {
                         </div>
                         <div className={classes.item}>
                             <FormLabel component="legend">Who can comment?</FormLabel>
-                            <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-                                <FormControlLabel value="female" control={<Radio />} label="Female" />
-                                <FormControlLabel value="female" control={<Radio />} label="Female" />
-                                <FormControlLabel value="female" control={<Radio />} label="Female" />
-                                <FormControlLabel value="female" control={<Radio />} label="Female" />
+                            <RadioGroup>
+                                <FormControlLabel value="Everybody" control={<Radio />} label="Everbody" />
+                                <FormControlLabel value="My Friends" control={<Radio />} label="My Friends" />
+                                <FormControlLabel value="Nobody" control={<Radio />} label="Nobody" />
+                                <FormControlLabel value="Custom" control={<Radio />} label="Custom (Premium)" />
                             </RadioGroup>
                         </div>
                     </form>
