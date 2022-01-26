@@ -39,6 +39,14 @@ function Alert(props) {
 const Add = () => {
     const classes = useStyles();
     const [open, setOpen] = useState(false);
+    const [openAlert, setOpenAlert] = useState(false);
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setOpenAlert(false);
+    };
     return (
         <>
             <Tooltip title="Add" aria-label="add" onClick={() => setOpen(true)}>
