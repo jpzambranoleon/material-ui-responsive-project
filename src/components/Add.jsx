@@ -1,4 +1,4 @@
-import { Container, Fab, makeStyles, MenuItem, Modal, TextField, Tooltip } from "@material-ui/core";
+import { Container, Fab, FormControlLabel, FormLabel, makeStyles, MenuItem, Modal, Radio, RadioGroup, TextField, Tooltip } from "@material-ui/core";
 import { Add as AddIcon } from "@material-ui/icons";
 import { useState } from "react";
 
@@ -58,6 +58,15 @@ const Add = () => {
                                 <MenuItem value="Public">Private</MenuItem>
                                 <MenuItem value="Public">Unlisted</MenuItem>
                             </TextField>
+                        </div>
+                        <div className={classes.item}>
+                            <FormLabel component="legend">Who can comment?</FormLabel>
+                            <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
+                                <FormControlLabel value="female" control={<Radio />} label="Female" />
+                                <FormControlLabel value="female" control={<Radio />} label="Female" />
+                                <FormControlLabel value="female" control={<Radio />} label="Female" />
+                                <FormControlLabel value="female" control={<Radio />} label="Female" />
+                            </RadioGroup>
                         </div>
                     </form>
                 </Container>
