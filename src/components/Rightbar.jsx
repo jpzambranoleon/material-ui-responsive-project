@@ -1,4 +1,4 @@
-import { Avatar, Container, ImageList, ImageListItem, ListItemSecondaryAction, makeStyles, Typography } from "@material-ui/core";
+import { Avatar, Container, ImageList, ImageListItem, Link, ListItemSecondaryAction, makeStyles, Typography } from "@material-ui/core";
 import { AvatarGroup } from "@material-ui/lab";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +27,7 @@ const Rightbar = () => {
                 <Avatar alt="Trevor Henderson" src="/static/images/avatar/7.jpg" />
             </AvatarGroup>
             <Typography className={classes.title} gutterBottom>Gallery</Typography>
-            <ImageList rowHeight={100} className={classes.imageList} cols={3}>
+            <ImageList rowHeight={100} style={{ marginBottom: 20 }} cols={3}>
                 <ImageListItem>
                     <img src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=242&h=242&fit=crop&auto=format&dpr=2" alt="" />
                 </ImageListItem>
@@ -47,6 +47,21 @@ const Rightbar = () => {
                     <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=242&h=242&fit=crop&auto=format&dpr=2" alt="" />
                 </ImageListItem>
             </ImageList>
+            <Typography className={classes.title} gutterBottom>
+                Categories
+            </Typography>
+            <Link href="#" className={classes.link} variant="body2">
+                Sport
+            </Link>
+            <Link href="#" className={classes.link} variant="body2">
+                Food
+            </Link>
+            <Link href="#" className={classes.link} variant="body2">
+                Movies
+            </Link>
+            <Link href="#" className={classes.link} variant="body2">
+                Science
+            </Link>
         </Container>
     );
 };
