@@ -62,10 +62,10 @@ const Add = () => {
                         <div className={classes.item}>
                             <FormLabel component="legend">Who can comment?</FormLabel>
                             <RadioGroup>
-                                <FormControlLabel value="Everybody" control={<Radio />} label="Everbody" />
-                                <FormControlLabel value="My Friends" control={<Radio />} label="My Friends" />
-                                <FormControlLabel value="Nobody" control={<Radio />} label="Nobody" />
-                                <FormControlLabel value="Custom" control={<Radio />} label="Custom (Premium)" />
+                                <FormControlLabel value="Everybody" control={<Radio size="small"/>} label="Everbody" />
+                                <FormControlLabel value="My Friends" control={<Radio size="small"/>} label="My Friends" />
+                                <FormControlLabel value="Nobody" control={<Radio size="small"/>} label="Nobody" />
+                                <FormControlLabel value="Custom" control={<Radio size="small"/>} label="Custom (Premium)" />
                             </RadioGroup>
                         </div>
                     </form>
