@@ -103,7 +103,12 @@ const Add = () => {
                     </form>
                 </Container>
             </Modal>
-            <Snackbar open={openAlert} autoHideDuration={4000} onClose={handleClose}>
+            <Snackbar 
+                open={openAlert} 
+                autoHideDuration={4000} 
+                onClose={handleClose}
+                anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+            >
                 <Alert onClose={handleClose} severity="success">
                     This is a success message!
                 </Alert>
