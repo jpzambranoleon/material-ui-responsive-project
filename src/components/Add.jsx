@@ -53,7 +53,7 @@ const Add = () => {
                                 style={{width:"100%"}} />
                         </div>
                         <div className={classes.item}>
-                            <TextField select label="Visibility">
+                            <TextField select label="Visibility" value="Public">
                                 <MenuItem value="Public">Public</MenuItem>
                                 <MenuItem value="Public">Private</MenuItem>
                                 <MenuItem value="Public">Unlisted</MenuItem>
